@@ -139,23 +139,23 @@
                         the name of the domain(s) in which the
                         extension was declared                     -->
 
+<!ENTITY % index-base   "index-base |
+                         %indexing-d-index-base;
+                        ">
 <!ENTITY % note         "note |
                          %hazard-d-note;
                         ">
 <!ENTITY % ph           "ph |
                          %hi-d-ph; |
-                         %equation-d-ph; |
                          %pr-d-ph; |
                          %sw-d-ph; |
-                         %ui-d-ph;
-                        ">
-<!ENTITY % index-base   "index-base |
-                         %indexing-d-index-base;
+                         %ui-d-ph; |
+                         %equation-d-ph;
                         ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig; |
-                         %equation-d-fig; |
-                         %pr-d-fig;
+                         %pr-d-fig; |
+                         %equation-d-fig;
                         ">
 <!ENTITY % data         "data |
                          %ut-d-data;
@@ -163,19 +163,12 @@
 <!ENTITY % term         "term |
                          %abbrev-d-term;
                         ">
-<!ENTITY % div          "div |
-                         %equation-d-div;
-                        ">
 <!ENTITY % keyword      "keyword |
                          %markup-d-keyword; |
                          %pr-d-keyword; |
                          %sw-d-keyword; |
                          %ui-d-keyword; |
                          %xml-d-keyword;
-                        ">
-<!ENTITY % foreign      "foreign |
-                         %mathml-d-foreign; |
-                         %svg-d-foreign;
                         ">
 <!ENTITY % pre          "pre |
                          %pr-d-pre; |
@@ -187,6 +180,13 @@
                         ">
 <!ENTITY % metadata     "metadata |
                          %relmgmt-d-metadata;
+                        ">
+<!ENTITY % foreign      "foreign |
+                         %svg-d-foreign; |
+                         %mathml-d-foreign;
+                        ">
+<!ENTITY % div          "div |
+                         %equation-d-div;
                         ">
 
 <!-- ============================================================= -->

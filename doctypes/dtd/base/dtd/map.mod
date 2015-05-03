@@ -152,11 +152,6 @@
                            targetonly |
                            -dita-use-conref-target)
                                     #IMPLIED
-               toc
-                          (no |
-                           yes |
-                           -dita-use-conref-target)
-                                    'no'
                print
                           (no |
                            printonly |
@@ -172,6 +167,61 @@
                           CDATA
                                     #IMPLIED
                keyscope
+                          CDATA
+                                    #IMPLIED"
+>
+<!ENTITY % topicref-atts-no-toc-no-keyscope
+              "collection-type
+                          (choice |
+                           family |
+                           sequence |
+                           unordered |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               type
+                          CDATA
+                                    #IMPLIED
+               cascade
+                          CDATA
+                                    #IMPLIED
+               processing-role
+                          (normal |
+                           resource-only |
+                           -dita-use-conref-target)
+                                    'resource-only'
+               scope
+                          (external |
+                           local |
+                           peer |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               locktitle
+                          (no |
+                           yes |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               format
+                          CDATA
+                                    #IMPLIED
+               linking
+                          (none |
+                           normal |
+                           sourceonly |
+                           targetonly |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               print
+                          (no |
+                           printonly |
+                           yes |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               search
+                          (no |
+                           yes |
+                           -dita-use-conref-target)
+                                    #IMPLIED
+               chunk
                           CDATA
                                     #IMPLIED"
 >
@@ -394,7 +444,7 @@
                outputclass
                           CDATA
                                     #IMPLIED
-               %topicref-atts-no-toc;
+               %topicref-atts-no-toc-no-keyscope;
                %univ-atts;"
 >
 <!ELEMENT  reltable %reltable.content;>
@@ -422,7 +472,7 @@
               "outputclass
                           CDATA
                                     #IMPLIED
-               %topicref-atts;
+               %topicref-atts-no-toc-no-keyscope;
                %univ-atts;"
 >
 <!ELEMENT  relcolspec %relcolspec.content;>
@@ -452,7 +502,7 @@
               "outputclass
                           CDATA
                                     #IMPLIED
-               %topicref-atts;
+               %topicref-atts-no-toc-no-keyscope;
                %univ-atts;"
 >
 <!ELEMENT  relcell %relcell.content;>

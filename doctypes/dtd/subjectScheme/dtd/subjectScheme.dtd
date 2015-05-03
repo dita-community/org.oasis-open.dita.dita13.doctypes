@@ -87,14 +87,14 @@
                         the name of the domain(s) in which the
                         extension was declared                     -->
 
+<!ENTITY % topicref     "topicref |
+                         %mapgroup-d-topicref;
+                        ">
 <!ENTITY % note         "note |
                          %hazard-d-note;
                         ">
 <!ENTITY % ph           "ph |
                          %hi-d-ph;
-                        ">
-<!ENTITY % topicref     "topicref |
-                         %mapgroup-d-topicref;
                         ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig;

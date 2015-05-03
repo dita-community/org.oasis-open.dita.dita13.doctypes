@@ -96,6 +96,9 @@
                         the name of the domain(s) in which the
                         extension was declared                     -->
 
+<!ENTITY % index-base   "index-base |
+                         %indexing-d-index-base;
+                        ">
 <!ENTITY % note         "note |
                          %hazard-d-note;
                         ">
@@ -103,14 +106,17 @@
                          %hi-d-ph; |
                          %ui-d-ph;
                         ">
-<!ENTITY % index-base   "index-base |
-                         %indexing-d-index-base;
-                        ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig;
                         ">
 <!ENTITY % data         "data |
                          %ut-d-data;
+                        ">
+<!ENTITY % keyword      "keyword |
+                         %ui-d-keyword;
+                        ">
+<!ENTITY % pre          "pre |
+                         %ui-d-pre;
                         ">
 <!ENTITY % foreign      "foreign |
                          %svg-d-foreign;
@@ -120,12 +126,6 @@
                         ">
 <!ENTITY % postreq      "postreq |
                          %taskreq-d-postreq;
-                        ">
-<!ENTITY % keyword      "keyword |
-                         %ui-d-keyword;
-                        ">
-<!ENTITY % pre          "pre |
-                         %ui-d-pre;
                         ">
 
 <!-- ============================================================= -->

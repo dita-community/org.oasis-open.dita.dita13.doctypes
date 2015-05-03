@@ -73,6 +73,7 @@
    <xs:include schemaLocation="./glossentryGrp.xsd"/>
    <xs:include schemaLocation="./glossgroupGrp.xsd"/>
    <xs:include schemaLocation="./referenceGrp.xsd"/>
+   <xs:include schemaLocation="./troubleshootingGrp.xsd"/>
 
    <!-- =================  MODULE INCLUDE DEFINITION  ================== -->
    <xs:include schemaLocation="../../base/xsd/commonElementMod.xsd"/>
@@ -233,6 +234,14 @@
     
   </xs:redefine>
   
+  <xs:redefine schemaLocation="troubleshootingMod.xsd" >
+    
+    <xs:group name="troubleshooting-info-types">
+      <xs:choice>
+        <xs:group ref="info-types"/>
+      </xs:choice>
+    </xs:group>
+  </xs:redefine>
   
 
    <!--  ================ INFO-TYPES DEFINITION =====================  -->
@@ -250,12 +259,13 @@
          <xs:element ref="glossentry"/>
          <xs:element ref="glossgroup"/>
          <xs:element ref="reference"/>
+      <xs:element ref="troubleshooting"/>
       </xs:choice>
    </xs:group>
 
    <xs:attributeGroup name="domains-att">
       <xs:attribute name="domains"
                     type="xs:string"
-                    default="(topic abbrev-d) (topic concept glossentry) (topic concept glossgroup) (topic concept) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d xml-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic reference) (topic relmgmt-d) (topic svg-d) (topic sw-d) (topic task strictTaskbody-c) (topic task) (topic ui-d) (topic ut-d) a(props deliveryTarget)"/>
+                    default="(topic abbrev-d) (topic concept glossentry) (topic concept glossgroup) (topic concept) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d xml-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic reference) (topic relmgmt-d) (topic svg-d) (topic sw-d) (topic task strictTaskbody-c) (topic task) (topic troubleshooting++task) (topic ui-d) (topic ut-d) a(props deliveryTarget)"/>
    </xs:attributeGroup>
 </xs:schema>

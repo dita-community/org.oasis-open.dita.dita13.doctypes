@@ -45,11 +45,22 @@ attribute scope {("external" | "local" | "peer" | "-dita-use-conref-target")}?,
 attribute locktitle {("no" | "yes" | "-dita-use-conref-target")}?, 
 attribute format { text}?, 
 attribute linking {("none" | "normal" | "sourceonly" | "targetonly" | "-dita-use-conref-target")}?, 
-attribute toc {("no" | "yes" | "-dita-use-conref-target")}?, 
 attribute print {("no" | "printonly" | "yes" | "-dita-use-conref-target")}?, 
 attribute search {("no" | "yes" | "-dita-use-conref-target")}?, 
 attribute chunk { text}?, 
 attribute keyscope { text}?
+topicref-atts-no-toc-no-keyscope = 
+attribute collection-type {("choice" | "family" | "sequence" | "unordered" | "-dita-use-conref-target")}?, 
+attribute type { text}?, 
+attribute cascade { text}?, 
+attribute processing-role {("normal" | "resource-only" | "-dita-use-conref-target")}?, 
+attribute scope {("external" | "local" | "peer" | "-dita-use-conref-target")}?, 
+attribute locktitle {("no" | "yes" | "-dita-use-conref-target")}?, 
+attribute format { text}?, 
+attribute linking {("none" | "normal" | "sourceonly" | "targetonly" | "-dita-use-conref-target")}?, 
+attribute print {("no" | "printonly" | "yes" | "-dita-use-conref-target")}?, 
+attribute search {("no" | "yes" | "-dita-use-conref-target")}?, 
+attribute chunk { text}?
 topicref-atts-without-format = 
 attribute collection-type {("choice" | "family" | "sequence" | "unordered" | "-dita-use-conref-target")}?, 
 attribute type { text}?, 
@@ -104,7 +115,7 @@ idElements |= anchor.element
 reltable.content = title?, topicmeta?, relheader?, relrow+
 reltable.attributes = 
 attribute title { text}?, 
-attribute outputclass { text}?, topicref-atts-no-toc, univ-atts
+attribute outputclass { text}?, topicref-atts-no-toc-no-keyscope, univ-atts
 reltable.element = 
 element reltable {reltable.attlist, reltable.content}
 reltable.attlist &= reltable.attributes
@@ -115,7 +126,7 @@ element relheader {relheader.attlist, relheader.content}
 relheader.attlist &= relheader.attributes
 relcolspec.content = title?, topicmeta?, topicref*
 relcolspec.attributes = 
-attribute outputclass { text}?, topicref-atts, univ-atts
+attribute outputclass { text}?, topicref-atts-no-toc-no-keyscope, univ-atts
 relcolspec.element = 
 element relcolspec {relcolspec.attlist, relcolspec.content}
 relcolspec.attlist &= relcolspec.attributes
@@ -127,7 +138,7 @@ element relrow {relrow.attlist, relrow.content}
 relrow.attlist &= relrow.attributes
 relcell.content = (topicref | data.elements.incl)*
 relcell.attributes = 
-attribute outputclass { text}?, topicref-atts, univ-atts
+attribute outputclass { text}?, topicref-atts-no-toc-no-keyscope, univ-atts
 relcell.element = 
 element relcell {relcell.attlist, relcell.content}
 relcell.attlist &= relcell.attributes

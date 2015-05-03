@@ -142,12 +142,15 @@
                         the name of the domain(s) in which the
                         extension was declared                     -->
 
+<!ENTITY % topicref     "topicref |
+                         %mapgroup-d-topicref; |
+                         %ditavalref-d-topicref;
+                        ">
 <!ENTITY % keywords     "keywords |
                          %delay-d-keywords;
                         ">
-<!ENTITY % topicref     "topicref |
-                         %ditavalref-d-topicref; |
-                         %mapgroup-d-topicref;
+<!ENTITY % index-base   "index-base |
+                         %indexing-d-index-base;
                         ">
 <!ENTITY % note         "note |
                          %hazard-d-note;
@@ -157,9 +160,6 @@
                          %pr-d-ph; |
                          %sw-d-ph; |
                          %ui-d-ph;
-                        ">
-<!ENTITY % index-base   "index-base |
-                         %indexing-d-index-base;
                         ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig; |

@@ -74,14 +74,14 @@
                         the name of the domain(s) in which the
                         extension was declared                     -->
 
+<!ENTITY % index-base   "index-base |
+                         %indexing-d-index-base;
+                        ">
 <!ENTITY % note         "note |
                          %hazard-d-note;
                         ">
 <!ENTITY % ph           "ph |
                          %hi-d-ph;
-                        ">
-<!ENTITY % index-base   "index-base |
-                         %indexing-d-index-base;
                         ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig;

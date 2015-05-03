@@ -68,6 +68,7 @@ include "conceptMod.rnc"
 include "glossentryMod.rnc"
 include "glossgroupMod.rnc"
 include "referenceMod.rnc"
+include "troubleshootingMod.rnc"
 include "abbreviateDomain.rnc"
 include "../../base/rnc/deliveryTargetAttDomain.rnc"
 include "equationDomain.rnc"
@@ -91,6 +92,6 @@ dita.attlist &= arch-atts, localization-atts, global-atts
 }
 div {
 any = (idElements | 
-element  * - (topic | concept | glossgroup | glossentry | reference | task) {
+element  * - (topic | concept | glossgroup | glossentry | reference | task | troubleshooting) {
 attribute  * { text}*, any} |  text )*
 }
