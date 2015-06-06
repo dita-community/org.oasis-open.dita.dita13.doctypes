@@ -1,7 +1,7 @@
 <!-- 
   Plugin descriptor for the DITA 1.3 document types
   
-  Copyright (c) 2014 OASIS Open
+  Copyright (c) 2014, 2015 OASIS Open
   
   -->
 <plugin id="org.oasis-open.dita.dita13.doctypes">
