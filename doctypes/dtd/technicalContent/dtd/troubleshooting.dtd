@@ -201,6 +201,9 @@
 <!--                    TOPIC NESTING OVERRIDE                     -->
 <!-- ============================================================= -->
 
+<!ENTITY % task-info-types
+              "task"
+>
 <!ENTITY % troubleshooting-info-types
               "task"
 >

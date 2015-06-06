@@ -152,6 +152,11 @@
                            targetonly |
                            -dita-use-conref-target)
                                     #IMPLIED
+               toc
+                          (no |
+                           yes |
+                           -dita-use-conref-target)
+                                    'no'
                print
                           (no |
                            printonly |
@@ -210,6 +215,11 @@
                            targetonly |
                            -dita-use-conref-target)
                                     #IMPLIED
+               toc
+                          (no |
+                           yes |
+                           -dita-use-conref-target)
+                                    'no'
                print
                           (no |
                            printonly |

@@ -248,6 +248,15 @@
         </attribute>
       </optional>
       <optional>
+        <attribute name="toc" a:defaultValue="no">
+          <choice>
+            <value>no</value>
+            <value>yes</value>
+            <value>-dita-use-conref-target</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
         <attribute name="print">
           <choice>
             <value>no</value>
@@ -330,6 +339,14 @@
             <value>normal</value>
             <value>sourceonly</value>
             <value>targetonly</value>
+            <value>-dita-use-conref-target</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="toc" a:defaultValue="no">
+          <choice>
+            <value>no</value>
             <value>-dita-use-conref-target</value>
           </choice>
         </attribute>

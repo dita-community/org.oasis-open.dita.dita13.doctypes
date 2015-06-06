@@ -96,7 +96,11 @@ ORIGINAL CREATION DATE:
   <div>
       <a:documentation> MODULE INCLUSIONS </a:documentation>
       <include href="../../base/rng/topicMod.rng"/>
-      <include href="strictTaskbodyConstraintMod.rng"/>
+      <include href="strictTaskbodyConstraintMod.rng">
+        <define name="task-info-types">
+          <ref name="task.element"/>
+        </define>
+      </include>
       <include href="troubleshootingMod.rng">
          <define name="troubleshooting-info-types">
             <ref name="task.element"/>

@@ -156,7 +156,16 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="print">
+     <xs:attribute name="toc" default="no">
+       <xs:simpleType>
+         <xs:restriction base="xs:string">
+           <xs:enumeration value="no"/>
+           <xs:enumeration value="yes"/>
+           <xs:enumeration value="-dita-use-conref-target"/>
+         </xs:restriction>
+       </xs:simpleType>
+     </xs:attribute>
+     <xs:attribute name="print">
          <xs:simpleType>
             <xs:restriction base="xs:string">
                <xs:enumeration value="no"/>
@@ -235,7 +244,16 @@
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="print">
+     <xs:attribute name="toc" default="no">
+       <xs:simpleType>
+         <xs:restriction base="xs:string">
+           <xs:enumeration value="no"/>
+           <xs:enumeration value="yes"/>
+           <xs:enumeration value="-dita-use-conref-target"/>
+         </xs:restriction>
+       </xs:simpleType>
+     </xs:attribute>
+     <xs:attribute name="print">
          <xs:simpleType>
             <xs:restriction base="xs:string">
                <xs:enumeration value="no"/>
