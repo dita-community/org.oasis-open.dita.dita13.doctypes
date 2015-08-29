@@ -95,9 +95,9 @@
               uri="rng/svgDomain.rng"/>
       <system systemId="urn:oasis:names:tc:dita:rng:task.rng:1.3" uri="rng/task.rng"/>
       <system systemId="urn:oasis:names:tc:dita:rng:task.rng" uri="rng/task.rng"/>
-      <system systemId="urn:oasis:names:tc:dita:rng:taksMod.rng:1.3"
+      <system systemId="urn:oasis:names:tc:dita:rng:taskMod.rng:1.3"
               uri="rng/taskMod.rng"/>
-      <system systemId="urn:oasis:names:tc:dita:rng:taksMod.rng"
+      <system systemId="urn:oasis:names:tc:dita:rng:taskMod.rng"
               uri="rng/taskMod.rng"/>
       <system systemId="urn:oasis:names:tc:dita:rng:taskreqDomain.rng:1.3"
               uri="rng/taskreqDomain.rng"/>
@@ -213,9 +213,9 @@
            uri="rng/svgDomain.rng"/>
       <uri name="urn:oasis:names:tc:dita:rng:task.rng:1.3" uri="rng/task.rng"/>
       <uri name="urn:oasis:names:tc:dita:rng:task.rng" uri="rng/task.rng"/>
-      <uri name="urn:oasis:names:tc:dita:rng:taksMod.rng:1.3"
+      <uri name="urn:oasis:names:tc:dita:rng:taskMod.rng:1.3"
            uri="rng/taskMod.rng"/>
-      <uri name="urn:oasis:names:tc:dita:rng:taksMod.rng" uri="rng/taskMod.rng"/>
+      <uri name="urn:oasis:names:tc:dita:rng:taskMod.rng" uri="rng/taskMod.rng"/>
       <uri name="urn:oasis:names:tc:dita:rng:taskreqDomain.rng:1.3"
            uri="rng/taskreqDomain.rng"/>
       <uri name="urn:oasis:names:tc:dita:rng:taskreqDomain.rng"

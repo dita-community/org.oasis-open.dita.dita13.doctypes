@@ -94,12 +94,7 @@ ORIGINAL CREATION DATE:
         </zeroOrMore>
       </define>
       <define name="lcInteractionBase2.attributes">
-        <attribute name="id">
-          <data type="NMTOKEN"/>
-        </attribute>
-        <ref name="conref-atts"/>
-        <ref name="select-atts"/>
-        <ref name="localization-atts"/>
+        <ref name="univ-atts"/>
         <optional>
           <attribute name="outputclass"/>
         </optional>

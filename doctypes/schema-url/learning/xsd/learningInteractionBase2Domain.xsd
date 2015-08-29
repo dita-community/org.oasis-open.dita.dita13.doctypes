@@ -95,10 +95,7 @@
       </xs:sequence>
    </xs:group>
    <xs:attributeGroup name="lcInteractionBase2.attributes">
-      <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
-      <xs:attributeGroup ref="conref-atts"/>
-      <xs:attributeGroup ref="select-atts"/>
-      <xs:attributeGroup ref="localization-atts"/>
+      <xs:attributeGroup ref="univ-atts"/>
       <xs:attribute name="outputclass" type="xs:string"/>
       <xs:attributeGroup ref="global-atts"/>
    </xs:attributeGroup>
